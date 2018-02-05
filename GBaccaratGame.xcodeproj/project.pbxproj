@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F9C6DDE708A6D2A1207CB9 /* libPods-GBaccaratGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9B91B78AEDC31B4EAE0E23 /* libPods-GBaccaratGame.a */; };
 		5135F3EE2028046800149296 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F3ED2028046800149296 /* AppDelegate.m */; };
 		5135F3F12028046800149296 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F3F02028046800149296 /* ViewController.m */; };
 		5135F3F42028046800149296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5135F3F22028046800149296 /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 		5135F40C2028046800149296 /* GBaccaratGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBaccaratGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5135F4102028046900149296 /* GBaccaratGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBaccaratGameUITests.m; sourceTree = "<group>"; };
 		5135F4122028046900149296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9B91B78AEDC31B4EAE0E23 /* libPods-GBaccaratGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBaccaratGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF8404E3EC8F8AC6AA042E4 /* Pods-GBaccaratGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBaccaratGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame.release.xcconfig"; sourceTree = "<group>"; };
+		F67EC09591AC16BDB9E57D20 /* Pods-GBaccaratGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBaccaratGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F9C6DDE708A6D2A1207CB9 /* libPods-GBaccaratGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065C4AEADE06F16A2B55B282 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B9B91B78AEDC31B4EAE0E23 /* libPods-GBaccaratGame.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5135F3E02028046800149296 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				5135F4042028046800149296 /* GBaccaratGameTests */,
 				5135F40F2028046900149296 /* GBaccaratGameUITests */,
 				5135F3EA2028046800149296 /* Products */,
+				E286388F8BBF07CBC3F4BCAF /* Pods */,
+				065C4AEADE06F16A2B55B282 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +147,15 @@
 			path = GBaccaratGameUITests;
 			sourceTree = "<group>";
 		};
+		E286388F8BBF07CBC3F4BCAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F67EC09591AC16BDB9E57D20 /* Pods-GBaccaratGame.debug.xcconfig */,
+				8FF8404E3EC8F8AC6AA042E4 /* Pods-GBaccaratGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5135F4152028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGame" */;
 			buildPhases = (
+				1D747505AC59735E147A579C /* [CP] Check Pods Manifest.lock */,
 				5135F3E52028046800149296 /* Sources */,
 				5135F3E62028046800149296 /* Frameworks */,
 				5135F3E72028046800149296 /* Resources */,
+				50A8ADA8797E308A95ADE2E8 /* [CP] Embed Pods Frameworks */,
+				A562EDA1144DDED7E4E3D939 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D747505AC59735E147A579C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBaccaratGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A8ADA8797E308A95ADE2E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A562EDA1144DDED7E4E3D939 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/Appirater/Appirater.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5135F3E52028046800149296 /* Sources */ = {
@@ -428,6 +509,7 @@
 		};
 		5135F4162028046900149296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67EC09591AC16BDB9E57D20 /* Pods-GBaccaratGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +523,7 @@
 		};
 		5135F4172028046900149296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF8404E3EC8F8AC6AA042E4 /* Pods-GBaccaratGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
