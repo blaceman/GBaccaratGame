@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5135F3EE2028046800149296 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F3ED2028046800149296 /* AppDelegate.m */; };
+		5135F3F12028046800149296 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F3F02028046800149296 /* ViewController.m */; };
+		5135F3F42028046800149296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5135F3F22028046800149296 /* Main.storyboard */; };
+		5135F3F62028046800149296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5135F3F52028046800149296 /* Assets.xcassets */; };
+		5135F3F92028046800149296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5135F3F72028046800149296 /* LaunchScreen.storyboard */; };
+		5135F3FC2028046800149296 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F3FB2028046800149296 /* main.m */; };
+		5135F4062028046800149296 /* GBaccaratGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F4052028046800149296 /* GBaccaratGameTests.m */; };
+		5135F4112028046900149296 /* GBaccaratGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F4102028046900149296 /* GBaccaratGameUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5135F4022028046800149296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5135F3E12028046800149296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5135F3E82028046800149296;
+			remoteInfo = GBaccaratGame;
+		};
+		5135F40D2028046800149296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5135F3E12028046800149296 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5135F3E82028046800149296;
+			remoteInfo = GBaccaratGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5135F3E92028046800149296 /* GBaccaratGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBaccaratGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5135F3EC2028046800149296 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5135F3ED2028046800149296 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5135F3EF2028046800149296 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5135F3F02028046800149296 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5135F3F32028046800149296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5135F3F52028046800149296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5135F3F82028046800149296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5135F3FA2028046800149296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5135F3FB2028046800149296 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5135F4012028046800149296 /* GBaccaratGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBaccaratGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5135F4052028046800149296 /* GBaccaratGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBaccaratGameTests.m; sourceTree = "<group>"; };
+		5135F4072028046800149296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5135F40C2028046800149296 /* GBaccaratGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBaccaratGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5135F4102028046900149296 /* GBaccaratGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBaccaratGameUITests.m; sourceTree = "<group>"; };
+		5135F4122028046900149296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5135F3E62028046800149296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5135F3FE2028046800149296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5135F4092028046800149296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5135F3E02028046800149296 = {
+			isa = PBXGroup;
+			children = (
+				5135F3EB2028046800149296 /* GBaccaratGame */,
+				5135F4042028046800149296 /* GBaccaratGameTests */,
+				5135F40F2028046900149296 /* GBaccaratGameUITests */,
+				5135F3EA2028046800149296 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5135F3EA2028046800149296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5135F3E92028046800149296 /* GBaccaratGame.app */,
+				5135F4012028046800149296 /* GBaccaratGameTests.xctest */,
+				5135F40C2028046800149296 /* GBaccaratGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5135F3EB2028046800149296 /* GBaccaratGame */ = {
+			isa = PBXGroup;
+			children = (
+				5135F3EC2028046800149296 /* AppDelegate.h */,
+				5135F3ED2028046800149296 /* AppDelegate.m */,
+				5135F3EF2028046800149296 /* ViewController.h */,
+				5135F3F02028046800149296 /* ViewController.m */,
+				5135F3F22028046800149296 /* Main.storyboard */,
+				5135F3F52028046800149296 /* Assets.xcassets */,
+				5135F3F72028046800149296 /* LaunchScreen.storyboard */,
+				5135F3FA2028046800149296 /* Info.plist */,
+				5135F3FB2028046800149296 /* main.m */,
+			);
+			path = GBaccaratGame;
+			sourceTree = "<group>";
+		};
+		5135F4042028046800149296 /* GBaccaratGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				5135F4052028046800149296 /* GBaccaratGameTests.m */,
+				5135F4072028046800149296 /* Info.plist */,
+			);
+			path = GBaccaratGameTests;
+			sourceTree = "<group>";
+		};
+		5135F40F2028046900149296 /* GBaccaratGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5135F4102028046900149296 /* GBaccaratGameUITests.m */,
+				5135F4122028046900149296 /* Info.plist */,
+			);
+			path = GBaccaratGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5135F3E82028046800149296 /* GBaccaratGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5135F4152028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGame" */;
+			buildPhases = (
+				5135F3E52028046800149296 /* Sources */,
+				5135F3E62028046800149296 /* Frameworks */,
+				5135F3E72028046800149296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBaccaratGame;
+			productName = GBaccaratGame;
+			productReference = 5135F3E92028046800149296 /* GBaccaratGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5135F4002028046800149296 /* GBaccaratGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5135F4182028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGameTests" */;
+			buildPhases = (
+				5135F3FD2028046800149296 /* Sources */,
+				5135F3FE2028046800149296 /* Frameworks */,
+				5135F3FF2028046800149296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5135F4032028046800149296 /* PBXTargetDependency */,
+			);
+			name = GBaccaratGameTests;
+			productName = GBaccaratGameTests;
+			productReference = 5135F4012028046800149296 /* GBaccaratGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5135F40B2028046800149296 /* GBaccaratGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5135F41B2028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGameUITests" */;
+			buildPhases = (
+				5135F4082028046800149296 /* Sources */,
+				5135F4092028046800149296 /* Frameworks */,
+				5135F40A2028046800149296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5135F40E2028046800149296 /* PBXTargetDependency */,
+			);
+			name = GBaccaratGameUITests;
+			productName = GBaccaratGameUITests;
+			productReference = 5135F40C2028046800149296 /* GBaccaratGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5135F3E12028046800149296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = new4545;
+				TargetAttributes = {
+					5135F3E82028046800149296 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5135F4002028046800149296 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5135F3E82028046800149296;
+					};
+					5135F40B2028046800149296 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5135F3E82028046800149296;
+					};
+				};
+			};
+			buildConfigurationList = 5135F3E42028046800149296 /* Build configuration list for PBXProject "GBaccaratGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5135F3E02028046800149296;
+			productRefGroup = 5135F3EA2028046800149296 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5135F3E82028046800149296 /* GBaccaratGame */,
+				5135F4002028046800149296 /* GBaccaratGameTests */,
+				5135F40B2028046800149296 /* GBaccaratGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5135F3E72028046800149296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5135F3F92028046800149296 /* LaunchScreen.storyboard in Resources */,
+				5135F3F62028046800149296 /* Assets.xcassets in Resources */,
+				5135F3F42028046800149296 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5135F3FF2028046800149296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5135F40A2028046800149296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5135F3E52028046800149296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5135F3F12028046800149296 /* ViewController.m in Sources */,
+				5135F3FC2028046800149296 /* main.m in Sources */,
+				5135F3EE2028046800149296 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5135F3FD2028046800149296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5135F4062028046800149296 /* GBaccaratGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5135F4082028046800149296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5135F4112028046900149296 /* GBaccaratGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5135F4032028046800149296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5135F3E82028046800149296 /* GBaccaratGame */;
+			targetProxy = 5135F4022028046800149296 /* PBXContainerItemProxy */;
+		};
+		5135F40E2028046800149296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5135F3E82028046800149296 /* GBaccaratGame */;
+			targetProxy = 5135F40D2028046800149296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5135F3F22028046800149296 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5135F3F32028046800149296 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5135F3F72028046800149296 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5135F3F82028046800149296 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5135F4132028046900149296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5135F4142028046900149296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5135F4162028046900149296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBaccaratGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lwx.GBaccaratGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5135F4172028046900149296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBaccaratGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lwx.GBaccaratGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5135F4192028046900149296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBaccaratGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lwx.GBaccaratGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBaccaratGame.app/GBaccaratGame";
+			};
+			name = Debug;
+		};
+		5135F41A2028046900149296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBaccaratGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lwx.GBaccaratGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBaccaratGame.app/GBaccaratGame";
+			};
+			name = Release;
+		};
+		5135F41C2028046900149296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBaccaratGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lwx.GBaccaratGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GBaccaratGame;
+			};
+			name = Debug;
+		};
+		5135F41D2028046900149296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBaccaratGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lwx.GBaccaratGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GBaccaratGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5135F3E42028046800149296 /* Build configuration list for PBXProject "GBaccaratGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5135F4132028046900149296 /* Debug */,
+				5135F4142028046900149296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5135F4152028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5135F4162028046900149296 /* Debug */,
+				5135F4172028046900149296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5135F4182028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5135F4192028046900149296 /* Debug */,
+				5135F41A2028046900149296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5135F41B2028046900149296 /* Build configuration list for PBXNativeTarget "GBaccaratGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5135F41C2028046900149296 /* Debug */,
+				5135F41D2028046900149296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5135F3E12028046800149296 /* Project object */;
+}
