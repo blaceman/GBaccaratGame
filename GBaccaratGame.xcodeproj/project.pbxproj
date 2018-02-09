@@ -16,6 +16,10 @@
 		5135F3FC2028046800149296 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F3FB2028046800149296 /* main.m */; };
 		5135F4062028046800149296 /* GBaccaratGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F4052028046800149296 /* GBaccaratGameTests.m */; };
 		5135F4112028046900149296 /* GBaccaratGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5135F4102028046900149296 /* GBaccaratGameUITests.m */; };
+		5150653C202DCA2000773E8A /* FGTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5150653B202DCA2000773E8A /* FGTabbarVC.m */; };
+		51506543202DD08F00773E8A /* GBPlayOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506542202DD08F00773E8A /* GBPlayOneViewController.m */; };
+		51506546202DD0BB00773E8A /* GBPlayTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */; };
+		51506549202DD0CD00773E8A /* GBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506548202DD0CD00773E8A /* GBMineViewController.m */; };
 		51C5EA8D202991550055E1E5 /* GVUserDefaults+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8B202991540055E1E5 /* GVUserDefaults+Properties.m */; };
 		51C5EA91202992B90055E1E5 /* MBMemoryCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8F202992B90055E1E5 /* MBMemoryCacheManger.m */; };
 /* End PBXBuildFile section */
@@ -54,6 +58,15 @@
 		5135F40C2028046800149296 /* GBaccaratGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBaccaratGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5135F4102028046900149296 /* GBaccaratGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBaccaratGameUITests.m; sourceTree = "<group>"; };
 		5135F4122028046900149296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51506539202DC81800773E8A /* GBaccaratGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GBaccaratGame.entitlements; sourceTree = "<group>"; };
+		5150653A202DCA2000773E8A /* FGTabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGTabbarVC.h; sourceTree = "<group>"; };
+		5150653B202DCA2000773E8A /* FGTabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGTabbarVC.m; sourceTree = "<group>"; };
+		51506541202DD08F00773E8A /* GBPlayOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBPlayOneViewController.h; sourceTree = "<group>"; };
+		51506542202DD08F00773E8A /* GBPlayOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPlayOneViewController.m; sourceTree = "<group>"; };
+		51506544202DD0BB00773E8A /* GBPlayTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBPlayTwoViewController.h; sourceTree = "<group>"; };
+		51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPlayTwoViewController.m; sourceTree = "<group>"; };
+		51506547202DD0CD00773E8A /* GBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBMineViewController.h; sourceTree = "<group>"; };
+		51506548202DD0CD00773E8A /* GBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBMineViewController.m; sourceTree = "<group>"; };
 		51C5EA8820294F330055E1E5 /* APPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPConfig.h; sourceTree = "<group>"; };
 		51C5EA89202957BE0055E1E5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		51C5EA8A20297B590055E1E5 /* FGUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGUtilsMacro.h; sourceTree = "<group>"; };
@@ -125,6 +138,8 @@
 		5135F3EB2028046800149296 /* GBaccaratGame */ = {
 			isa = PBXGroup;
 			children = (
+				5150653D202DCCD900773E8A /* module */,
+				51506539202DC81800773E8A /* GBaccaratGame.entitlements */,
 				51C5EA8E2029916D0055E1E5 /* custom */,
 				5135F3EC2028046800149296 /* AppDelegate.h */,
 				5135F3ED2028046800149296 /* AppDelegate.m */,
@@ -157,6 +172,43 @@
 			path = GBaccaratGameUITests;
 			sourceTree = "<group>";
 		};
+		5150653D202DCCD900773E8A /* module */ = {
+			isa = PBXGroup;
+			children = (
+				51506540202DCE9A00773E8A /* mine */,
+				5150653F202DCE8F00773E8A /* playTwo */,
+				5150653E202DCE8000773E8A /* playOne */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		5150653E202DCE8000773E8A /* playOne */ = {
+			isa = PBXGroup;
+			children = (
+				51506541202DD08F00773E8A /* GBPlayOneViewController.h */,
+				51506542202DD08F00773E8A /* GBPlayOneViewController.m */,
+			);
+			path = playOne;
+			sourceTree = "<group>";
+		};
+		5150653F202DCE8F00773E8A /* playTwo */ = {
+			isa = PBXGroup;
+			children = (
+				51506544202DD0BB00773E8A /* GBPlayTwoViewController.h */,
+				51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */,
+			);
+			path = playTwo;
+			sourceTree = "<group>";
+		};
+		51506540202DCE9A00773E8A /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				51506547202DD0CD00773E8A /* GBMineViewController.h */,
+				51506548202DD0CD00773E8A /* GBMineViewController.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
 		51C5EA8E2029916D0055E1E5 /* custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +219,8 @@
 				51C5EA8B202991540055E1E5 /* GVUserDefaults+Properties.m */,
 				51C5EA90202992B90055E1E5 /* MBMemoryCacheManger.h */,
 				51C5EA8F202992B90055E1E5 /* MBMemoryCacheManger.m */,
+				5150653A202DCA2000773E8A /* FGTabbarVC.h */,
+				5150653B202DCA2000773E8A /* FGTabbarVC.m */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -251,6 +305,14 @@
 					5135F3E82028046800149296 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					5135F4002028046800149296 = {
 						CreatedOnToolsVersion = 9.0;
@@ -371,7 +433,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5135F3F12028046800149296 /* ViewController.m in Sources */,
+				5150653C202DCA2000773E8A /* FGTabbarVC.m in Sources */,
 				51C5EA91202992B90055E1E5 /* MBMemoryCacheManger.m in Sources */,
+				51506543202DD08F00773E8A /* GBPlayOneViewController.m in Sources */,
+				51506546202DD0BB00773E8A /* GBPlayTwoViewController.m in Sources */,
+				51506549202DD0CD00773E8A /* GBMineViewController.m in Sources */,
 				5135F3FC2028046800149296 /* main.m in Sources */,
 				51C5EA8D202991550055E1E5 /* GVUserDefaults+Properties.m in Sources */,
 				5135F3EE2028046800149296 /* AppDelegate.m in Sources */,
@@ -538,8 +604,11 @@
 			baseConfigurationReference = F67EC09591AC16BDB9E57D20 /* Pods-GBaccaratGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = GBaccaratGame/GBaccaratGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
+				DEVELOPMENT_TEAM = ZSQZSS4F94;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/$(PROJECT_DIR)/GBaccaratGame/custom/Prefix.pch";
@@ -556,8 +625,11 @@
 			baseConfigurationReference = 8FF8404E3EC8F8AC6AA042E4 /* Pods-GBaccaratGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = GBaccaratGame/GBaccaratGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
+				DEVELOPMENT_TEAM = ZSQZSS4F94;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/$(PROJECT_DIR)/GBaccaratGame/custom/Prefix.pch";
