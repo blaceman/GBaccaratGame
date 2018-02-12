@@ -20,6 +20,8 @@
 		51506543202DD08F00773E8A /* GBPlayOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506542202DD08F00773E8A /* GBPlayOneViewController.m */; };
 		51506546202DD0BB00773E8A /* GBPlayTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */; };
 		51506549202DD0CD00773E8A /* GBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506548202DD0CD00773E8A /* GBMineViewController.m */; };
+		51B8385420319160007DD794 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 51B8385320319160007DD794 /* main.js */; };
+		51B8385820319209007DD794 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B8385720319209007DD794 /* JSPatchPlatform.framework */; };
 		51C5EA8D202991550055E1E5 /* GVUserDefaults+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8B202991540055E1E5 /* GVUserDefaults+Properties.m */; };
 		51C5EA91202992B90055E1E5 /* MBMemoryCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8F202992B90055E1E5 /* MBMemoryCacheManger.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPlayTwoViewController.m; sourceTree = "<group>"; };
 		51506547202DD0CD00773E8A /* GBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBMineViewController.h; sourceTree = "<group>"; };
 		51506548202DD0CD00773E8A /* GBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBMineViewController.m; sourceTree = "<group>"; };
+		51B8385320319160007DD794 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../../../main.js; sourceTree = "<group>"; };
+		51B8385720319209007DD794 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
 		51C5EA8820294F330055E1E5 /* APPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPConfig.h; sourceTree = "<group>"; };
 		51C5EA89202957BE0055E1E5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		51C5EA8A20297B590055E1E5 /* FGUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGUtilsMacro.h; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9C6DDE708A6D2A1207CB9 /* libPods-GBaccaratGame.a in Frameworks */,
+				51B8385820319209007DD794 /* JSPatchPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +150,8 @@
 				5135F3ED2028046800149296 /* AppDelegate.m */,
 				5135F3EF2028046800149296 /* ViewController.h */,
 				5135F3F02028046800149296 /* ViewController.m */,
+				51B8385720319209007DD794 /* JSPatchPlatform.framework */,
+				51B8385320319160007DD794 /* main.js */,
 				5135F3F22028046800149296 /* Main.storyboard */,
 				5135F3F52028046800149296 /* Assets.xcassets */,
 				5135F3F72028046800149296 /* LaunchScreen.storyboard */,
@@ -354,6 +361,7 @@
 				5135F3F92028046800149296 /* LaunchScreen.storyboard in Resources */,
 				5135F3F62028046800149296 /* Assets.xcassets in Resources */,
 				5135F3F42028046800149296 /* Main.storyboard in Resources */,
+				51B8385420319160007DD794 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +617,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
 				DEVELOPMENT_TEAM = ZSQZSS4F94;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GBaccaratGame",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/$(PROJECT_DIR)/GBaccaratGame/custom/Prefix.pch";
@@ -630,6 +642,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_HEADERS_RUN_UNIFDEF = NO;
 				DEVELOPMENT_TEAM = ZSQZSS4F94;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GBaccaratGame",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/$(PROJECT_DIR)/GBaccaratGame/custom/Prefix.pch";

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FGTabbarVC.h"
+#import "ViewController.h"
 
 //极光推送
 #import "JPUSHService.h"
@@ -16,6 +17,8 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
+//jspath
+#import <JSPatchPlatform/JSPatch.h>
 
 @interface AppDelegate ()<JPUSHRegisterDelegate>
 
@@ -26,9 +29,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [FGTabbarVC new];
-    [self.window makeKeyAndVisible];
+  
     
     
     //极光推送初始化
@@ -40,6 +41,14 @@
     
     NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
     [defaultCenter addObserver:self selector:@selector(handlePushData:) name:kJPFNetworkDidReceiveMessageNotification object:nil];
+    
+
+    //jspatch
+    [self js_patch];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [FGTabbarVC new];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -62,6 +71,7 @@
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+//    [JSPatch sync];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
@@ -138,5 +148,19 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 }
 - (void)handlePushData:(NSDictionary *)dict{
     
+}
+
+
+#pragma --jspath
+-(void)js_patch{
+    //测试
+        [JSPatch testScriptInBundle];
+    
+    //    //jspath
+//    [JSPatch startWithAppKey:@"570bf6b5849d8003"];
+//    //公钥
+//    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDTsHWzwIxLGr4tm2X8htSW+YtI\n47VyE2KiPcGna4hRTzHUOkDYCSRZTftfW40I18g0xQ6CU2IjT0EpFousCtCZxZwE\nNfSSoNRKMK3+2Y6TB+AiRvNeoX7lrDeYM6tluGnBCppTKrhnGs404SQjLu7aL0nK\nf3y1RiHnHpL5UF7n2QIDAQAB\n-----END PUBLIC KEY-----"];
+    //    同步
+//    [JSPatch sync];
 }
 @end
