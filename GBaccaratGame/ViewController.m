@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"--测试--");
-    NSLog(@"%@" , self.arr[2]);
+//    NSLog(@"%@" , self.arr[2]);
 
 }
 

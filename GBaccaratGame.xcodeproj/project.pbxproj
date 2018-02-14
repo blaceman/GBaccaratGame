@@ -20,10 +20,10 @@
 		51506543202DD08F00773E8A /* GBPlayOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506542202DD08F00773E8A /* GBPlayOneViewController.m */; };
 		51506546202DD0BB00773E8A /* GBPlayTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */; };
 		51506549202DD0CD00773E8A /* GBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51506548202DD0CD00773E8A /* GBMineViewController.m */; };
-		51B8385420319160007DD794 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 51B8385320319160007DD794 /* main.js */; };
 		51B8385820319209007DD794 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B8385720319209007DD794 /* JSPatchPlatform.framework */; };
 		51C5EA8D202991550055E1E5 /* GVUserDefaults+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8B202991540055E1E5 /* GVUserDefaults+Properties.m */; };
 		51C5EA91202992B90055E1E5 /* MBMemoryCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8F202992B90055E1E5 /* MBMemoryCacheManger.m */; };
+		51FB57B1203472BD000E9E4E /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 51FB57B0203472BD000E9E4E /* main.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 		51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPlayTwoViewController.m; sourceTree = "<group>"; };
 		51506547202DD0CD00773E8A /* GBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBMineViewController.h; sourceTree = "<group>"; };
 		51506548202DD0CD00773E8A /* GBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBMineViewController.m; sourceTree = "<group>"; };
-		51B8385320319160007DD794 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = main.js; path = ../../../main.js; sourceTree = "<group>"; };
 		51B8385720319209007DD794 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
 		51C5EA8820294F330055E1E5 /* APPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPConfig.h; sourceTree = "<group>"; };
 		51C5EA89202957BE0055E1E5 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		51C5EA8C202991550055E1E5 /* GVUserDefaults+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+Properties.h"; sourceTree = "<group>"; };
 		51C5EA8F202992B90055E1E5 /* MBMemoryCacheManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBMemoryCacheManger.m; sourceTree = "<group>"; };
 		51C5EA90202992B90055E1E5 /* MBMemoryCacheManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBMemoryCacheManger.h; sourceTree = "<group>"; };
+		51FB57B0203472BD000E9E4E /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		7B9B91B78AEDC31B4EAE0E23 /* libPods-GBaccaratGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBaccaratGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF8404E3EC8F8AC6AA042E4 /* Pods-GBaccaratGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBaccaratGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame.release.xcconfig"; sourceTree = "<group>"; };
 		F67EC09591AC16BDB9E57D20 /* Pods-GBaccaratGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBaccaratGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 		5135F3EB2028046800149296 /* GBaccaratGame */ = {
 			isa = PBXGroup;
 			children = (
+				51FB57B0203472BD000E9E4E /* main.js */,
 				5150653D202DCCD900773E8A /* module */,
 				51506539202DC81800773E8A /* GBaccaratGame.entitlements */,
 				51C5EA8E2029916D0055E1E5 /* custom */,
@@ -151,7 +152,6 @@
 				5135F3EF2028046800149296 /* ViewController.h */,
 				5135F3F02028046800149296 /* ViewController.m */,
 				51B8385720319209007DD794 /* JSPatchPlatform.framework */,
-				51B8385320319160007DD794 /* main.js */,
 				5135F3F22028046800149296 /* Main.storyboard */,
 				5135F3F52028046800149296 /* Assets.xcassets */,
 				5135F3F72028046800149296 /* LaunchScreen.storyboard */,
@@ -361,7 +361,7 @@
 				5135F3F92028046800149296 /* LaunchScreen.storyboard in Resources */,
 				5135F3F62028046800149296 /* Assets.xcassets in Resources */,
 				5135F3F42028046800149296 /* Main.storyboard in Resources */,
-				51B8385420319160007DD794 /* main.js in Resources */,
+				51FB57B1203472BD000E9E4E /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
