@@ -11,6 +11,7 @@
 #import "APPConfig.h"
 #import <Aspects.h>
 #import "MBMemoryCacheManger.h"
+#import "UIView+QuickCreate.h"
 
 
 #endif

@@ -17,9 +17,48 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor purpleColor];
     self.navigationItem.title = @"游戏二";
-
+    [self backGroundImageView];
+}
+-(void)backGroundImageView{
+//    UIImageView *backImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"xiangqing1"]];
+//    [self.view addSubview:backImageView];
+//    [backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerY.offset(-100);
+//        make.left.right.offset(0);
+//    }];
+    UILabel *titlelabel = [[UILabel alloc]init];
+    titlelabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:titlelabel];
+    titlelabel.font = AdaptedFontSize(16);
+    titlelabel.text = @"游戏说明";
+    titlelabel.textColor = [UIColor whiteColor];
+    [titlelabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset(AdaptedHeight(100));
+        make.left.right.offset(0);
+    }];
+    
+    UILabel *contentLabel = [UILabel qc_text:@"1. 选择庄家或者闲家,并下注\n\n2. 使用3-8副牌,每副52张纸牌,洗在一起并置于发牌盒中,由荷官从中分发,各家力争手中有两张牌总点数为9或者接近9/k/q/j和10都记为0其它牌按牌面点数计点,计算时,各家手中的牌相加,但又论于最后一位数组。最终数字大的获胜" fontSize:13 colorHex:0xfefefe];
+    contentLabel.numberOfLines = 0;
+    [self.view addSubview:contentLabel];
+    [contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(titlelabel.mas_bottom).offset(AdaptedHeight(40));
+        make.left.offset(AdaptedWidth(48));
+        make.right.offset(AdaptedWidth(-48));
+    }];
+    
+    
+    UIButton *startGame = [UIButton qc_title:@"开始游戏" fontSize:16 titleColorHex:0x666666];
+    startGame.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:startGame];
+    startGame.layer.cornerRadius = AdaptedWidth(16);
+    startGame.layer.masksToBounds = YES;
+    [startGame mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(contentLabel).offset(AdaptedHeight(200));
+        make.centerX.offset(0);
+        make.width.mas_equalTo(AdaptedWidth(250));
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,6 +1,6 @@
 
 
-
+#import "FGUtilsMacro.h"
 
 
 // debug
@@ -53,15 +53,17 @@
 #define StrongSelf  Strongify(self);
 
 
-//字体适配(目前统一使用系统默认字体)
-#define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
-#define AdaptedBoldFontSize(R)  [UIFont boldSystemFontOfSize:AdaptedWidth(R)]
-
 //不同屏幕尺寸适配（414，736是因为效果图为iPhone6plus如果不是则根据实际情况修改）
 #define kScreenWidthRatio  (kScreenWidth / 414.0)
 #define kScreenHeightRatio (kScreenHeight / 736.0)
 #define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
 #define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+
+//字体适配(目前统一使用系统默认字体)
+#define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
+#define AdaptedBoldFontSize(R)  [UIFont boldSystemFontOfSize:AdaptedWidth(R)]
+
+
 
 
 //设置 view 圆角和边框
