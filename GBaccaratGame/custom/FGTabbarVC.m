@@ -19,7 +19,8 @@
 @property (nonatomic,strong)NSMutableArray *normalImageNameArray;
 @property (nonatomic,strong)NSMutableArray *selectedImageNameArray;
 @property (nonatomic,strong)UIButton *complaintView;
-@property (nonatomic,assign)BOOL middleItemStatue;
+@property (nonatomic,assign)BOOL shouldAutorotate;
+
 @end
 
 @implementation FGTabbarVC
@@ -40,6 +41,9 @@ static UIView *view;
     self.tabBar.translucent = NO;
     
     [self customizeTabBar];
+    
+    //注册旋转屏幕的通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(autorotateInterface:) name:@"InterfaceOrientationNotification" object:nil];
 }
 
 - (void)customizeTabBar
@@ -77,7 +81,37 @@ static UIView *view;
     
 }
 
+-(void)autorotateInterface:(NSNotification *)notifition
+{
+    _shouldAutorotate = [notifition.object boolValue];
+}
 
+///**
+// *
+// *  @return 是否支持旋转
+// */
+//-(BOOL)shouldAutorotate
+//{
+//    NSLog(@"======%d",_shouldAutorotate);
+//    return _shouldAutorotate;
+//}
+//
+//
+///**
+// *  适配旋转的类型
+// *
+// *  @return 类型
+// */
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+//{
+//    if (!_shouldAutorotate) {
+//        return UIInterfaceOrientationMaskPortrait;
+//    }
+//    return UIInterfaceOrientationMaskAllButUpsideDown;
+//}
 
-
+-(BOOL)shouldAutorotate
+{
+    return YES;
+}
 @end

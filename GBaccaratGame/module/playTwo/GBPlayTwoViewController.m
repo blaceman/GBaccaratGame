@@ -7,6 +7,7 @@
 //
 
 #import "GBPlayTwoViewController.h"
+#import "GBPlayGameVC.h"
 
 @interface GBPlayTwoViewController ()
 
@@ -58,6 +59,13 @@
         make.top.equalTo(contentLabel).offset(AdaptedHeight(200));
         make.centerX.offset(0);
         make.width.mas_equalTo(AdaptedWidth(250));
+    }];
+    WeakSelf
+    [[startGame rac_signalForControlEvents:(UIControlEventTouchUpInside)]subscribeNext:^(__kindof UIControl * _Nullable x) {
+        StrongSelf
+        GBPlayGameVC *playGameVC = [GBPlayGameVC new];
+//        [self presentViewController:playGameVC animated:YES completion:nil];
+        [self.navigationController pushViewController:playGameVC animated:YES];
     }];
 }
 

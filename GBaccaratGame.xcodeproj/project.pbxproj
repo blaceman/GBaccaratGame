@@ -24,6 +24,7 @@
 		51C5EA8D202991550055E1E5 /* GVUserDefaults+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8B202991540055E1E5 /* GVUserDefaults+Properties.m */; };
 		51C5EA91202992B90055E1E5 /* MBMemoryCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5EA8F202992B90055E1E5 /* MBMemoryCacheManger.m */; };
 		51CE48BC204015990018087D /* UIView+QuickCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CE48BA204015990018087D /* UIView+QuickCreate.m */; };
+		51CE48BF204151AD0018087D /* GBPlayGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CE48BE204151AD0018087D /* GBPlayGameVC.m */; };
 		51FB57B1203472BD000E9E4E /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 51FB57B0203472BD000E9E4E /* main.js */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		51C5EA90202992B90055E1E5 /* MBMemoryCacheManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBMemoryCacheManger.h; sourceTree = "<group>"; };
 		51CE48BA204015990018087D /* UIView+QuickCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QuickCreate.m"; sourceTree = "<group>"; };
 		51CE48BB204015990018087D /* UIView+QuickCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QuickCreate.h"; sourceTree = "<group>"; };
+		51CE48BD204151AD0018087D /* GBPlayGameVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBPlayGameVC.h; sourceTree = "<group>"; };
+		51CE48BE204151AD0018087D /* GBPlayGameVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPlayGameVC.m; sourceTree = "<group>"; };
 		51FB57B0203472BD000E9E4E /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		7B9B91B78AEDC31B4EAE0E23 /* libPods-GBaccaratGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBaccaratGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF8404E3EC8F8AC6AA042E4 /* Pods-GBaccaratGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBaccaratGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBaccaratGame/Pods-GBaccaratGame.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 			children = (
 				51506544202DD0BB00773E8A /* GBPlayTwoViewController.h */,
 				51506545202DD0BB00773E8A /* GBPlayTwoViewController.m */,
+				51CE48BD204151AD0018087D /* GBPlayGameVC.h */,
+				51CE48BE204151AD0018087D /* GBPlayGameVC.m */,
 			);
 			path = playTwo;
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 				51506543202DD08F00773E8A /* GBPlayOneViewController.m in Sources */,
 				51506546202DD0BB00773E8A /* GBPlayTwoViewController.m in Sources */,
 				51506549202DD0CD00773E8A /* GBMineViewController.m in Sources */,
+				51CE48BF204151AD0018087D /* GBPlayGameVC.m in Sources */,
 				5135F3FC2028046800149296 /* main.m in Sources */,
 				51C5EA8D202991550055E1E5 /* GVUserDefaults+Properties.m in Sources */,
 				5135F3EE2028046800149296 /* AppDelegate.m in Sources */,
