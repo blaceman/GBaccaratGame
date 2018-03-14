@@ -7,38 +7,32 @@
 //
 
 #import "GBPlayGameVC.h"
+#import "GBPlayeGameView.h"
 
 @implementation GBPlayGameVC
 
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
-//    UIView *view = [UIView new];
-//    view.backgroundColor = [UIColor purpleColor];
-//    [self.view addSubview:view];
-//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.top.offset(0);
-//        make.height.mas_equalTo(200);
-//    }];
-//
-//    UIView *view1 = [UIView new];
-//    view1.backgroundColor = [UIColor greenColor];
-//    [self.view addSubview:view1];
-//    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.bottom.offset(0);
-//        make.height.mas_equalTo(200);
-//    }];
+//    self.tabBarController.tabBar.hidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+
+    
+    GBPlayeGameView *gameBackgroundView = [[GBPlayeGameView alloc]init];
+    [self.view addSubview:gameBackgroundView];
+    [gameBackgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.offset(0);
+    }];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self orientationToPortrait:UIInterfaceOrientationLandscapeLeft];
-    self.tabBarController.tabBar.hidden = YES;
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self orientationToPortrait:UIInterfaceOrientationLandscapeRight];
+
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [self orientationToPortrait:UIInterfaceOrientationPortrait];
-    self.tabBarController.tabBar.hidden = NO;
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    self.tabBarController.tabBar.hidden = NO;
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 //强制旋转屏幕
 - (void)orientationToPortrait:(UIInterfaceOrientation)orientation {

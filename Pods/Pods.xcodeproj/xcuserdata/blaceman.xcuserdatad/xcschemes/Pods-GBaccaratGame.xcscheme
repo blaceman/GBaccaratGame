@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0971D31C19C7C49606B5B09D4375D27C'
-               BlueprintName = 'Pods-GBaccaratGame'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-GBaccaratGame.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43612D30D66F3635BBC2115C1AE81AA7"
+               BlueprintName = "Pods-GBaccaratGame"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-GBaccaratGame.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

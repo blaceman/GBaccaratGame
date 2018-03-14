@@ -10,7 +10,7 @@ target 'GBaccaratGame' do
     pod 'Aspects' #封装 runtime 代码
     pod 'JPush' #极光推送
     #=====================
-     #pod 'XMNetworking' #网络请求库
+    pod 'XMNetworking' #网络请求库
 
     #暂时去掉网络请求框架
 

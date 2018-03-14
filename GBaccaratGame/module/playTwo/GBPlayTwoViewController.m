@@ -64,6 +64,7 @@
     [[startGame rac_signalForControlEvents:(UIControlEventTouchUpInside)]subscribeNext:^(__kindof UIControl * _Nullable x) {
         StrongSelf
         GBPlayGameVC *playGameVC = [GBPlayGameVC new];
+        playGameVC.hidesBottomBarWhenPushed = YES;
 //        [self presentViewController:playGameVC animated:YES completion:nil];
         [self.navigationController pushViewController:playGameVC animated:YES];
     }];
